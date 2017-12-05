@@ -1,0 +1,55 @@
+---
+
+- hosts: all:localhost
+  tags:
+  - always
+  - non-developers
+  tasks:
+  - { include_tasks: tasks/homebrew-prerequisites.yml }
+  roles:
+  - { role: homebrew }
+  - { role: casks }
+  vars:
+  - homebrew_install_path: /usr/local/Homebrew
+  - cask_apps:
+    - adobe-creative-cloud
+    - caffeine
+    - daisydisk
+    - dropbox
+    - firefox
+    - google-chrome
+    - google-backup-and-sync
+    - google-hangouts
+    - hosts
+    - lastpass
+    - microsoft-office
+    - skype
+    - slack
+    - spotify
+    - teamviewer
+
+
+- hosts: all:localhost
+  connection: local
+  tags:
+  - developers
+  - support
+  roles:
+  - { role: casks }
+  vars:
+  - cask_apps:
+    - atom
+    - filezilla
+    - hem
+    - iterm2
+    - vagrant
+    - virtualbox
+
+  - cask_fonts:
+    - font-inconsolata-dz
+    - font-inconsolata-dz-for-powerline
+    - font-source-code-pro
+    - font-source-code-pro-for-powerline
+
+
+...

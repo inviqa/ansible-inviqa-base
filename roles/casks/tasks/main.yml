@@ -1,0 +1,32 @@
+---
+  - name: Tap caskroom/versions
+    homebrew_tap:
+      tap: caskroom/versions
+    tags:
+      - casks
+
+  - name: Install apps from cask list
+    homebrew_cask:
+      name: "{{ item }}"
+      state: present
+      install_options: force
+    with_items:
+      - "{{ cask_apps }}"
+    tags:
+      - casks
+
+  - name: Tap caskroom/fonts
+    homebrew_tap:
+      tap: caskroom/fonts
+    tags:
+      - casks
+      - fonts
+
+  - name: Install fonts
+    homebrew_cask:
+      name: "{{ item }}"
+      state: present
+    with_items: "{{ cask_fonts }}"
+    tags:
+      - casks
+      - fonts

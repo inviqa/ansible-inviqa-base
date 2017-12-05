@@ -1,0 +1,25 @@
+---
+- name: Create required Homebrew directories
+  file:
+    path: "{{ item }}"
+    state: directory
+    group: admin
+    mode: 0775
+  become: true
+  with_items:
+  - "{{ homebrew_install_path }}"
+  - "/usr/local/Cellar"
+
+- name: Set ACLs on required Homebrew directories
+  acl:
+    path: "{{ item }}"
+    default: yes
+    entity: admin
+    permissions: rw
+    etype: group
+  become: true
+  with_items:
+  - "{{ homebrew_install_path }}"
+  - "/usr/local/Cellar"
+  when: not ansible_os_family == 'Darwin'
+...
