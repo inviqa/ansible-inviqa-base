@@ -10,6 +10,9 @@
   - "{{ homebrew_install_path }}"
   - "/usr/local/Cellar"
   - "/usr/local/var"
+  - "/usr/local/etc"
+  - "/usr/local/opt"
+  - "/usr/local/share"
 
 - name: Set ACLs on required Homebrew directories
   acl:
@@ -23,6 +26,9 @@
   - "{{ homebrew_install_path }}"
   - "/usr/local/Cellar"
   - "/usr/local/var"
+  - "/usr/local/etc"
+  - "/usr/local/opt"
+  - "/usr/local/share"
 
   when: not ansible_os_family == 'Darwin'
 ...

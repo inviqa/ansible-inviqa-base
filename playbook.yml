@@ -10,7 +10,7 @@
   - { include_tasks: tasks/homebrew-prerequisites.yml }
   vars:
   - homebrew_install_path: /usr/local/Homebrew
-  
+
 - hosts: all:localhost
   tags:
   - always
@@ -28,7 +28,8 @@
     - dropbox
     - firefox
     - google-chrome
-    - google-backup-and-sync
+    - google-drive-file-stream
+    #- google-backup-and-sync
     - google-hangouts
     - hosts
     - lastpass
