@@ -7,8 +7,8 @@
     mode: 0775
   become: true
   with_items:
-  - "{{ homebrew_install_path }}"
   - "/usr/local"
+  - "{{ homebrew_install_path }}"
   - "/usr/local/Cellar"
   - "/usr/local/var"
 
@@ -21,8 +21,8 @@
     etype: group
   become: true
   with_items:
-  - "{{ homebrew_install_path }}"
   - "/usr/local"
+  - "{{ homebrew_install_path }}"
   - "/usr/local/Cellar"
   - "/usr/local/var"
 
