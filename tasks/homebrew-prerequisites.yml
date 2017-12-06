@@ -9,6 +9,7 @@
   with_items:
   - "{{ homebrew_install_path }}"
   - "/usr/local/Cellar"
+  - "/usr/local/var"
 
 - name: Set ACLs on required Homebrew directories
   acl:
@@ -21,5 +22,7 @@
   with_items:
   - "{{ homebrew_install_path }}"
   - "/usr/local/Cellar"
+  - "/usr/local/var"
+
   when: not ansible_os_family == 'Darwin'
 ...
