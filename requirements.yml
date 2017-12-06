@@ -4,16 +4,6 @@
 - src:      shrikeh.facl
 - src:      shrikeh.curl
   version:  master
-
 - src:      goozbach.EPEL
-- src:      bennojoy.ntp
-- src:      avelis.dome9
 - src:      Rackor3000.sudo
-
-- src:      https://github.com/inviqa/ansible-jumpcloud
-  name:     inviqa.jumpcloud
-  version:  master
-- src:      https://github.com/inviqa/ansible-config-driven-helper
-  name:     inviqa.config-driven-helper
-  version:  master
 ...
