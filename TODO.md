@@ -11,3 +11,4 @@
 - [ ] install the ladmin (maybe via JumpCloud): the password hash for admin could stored in incubator
 - [ ] see if we can guide the user to change their Google Password through the kickstarter
 - [ ] configure all Google applications using the users' account
+- [ ] create separate playlist for Linux and macOS: incldue them in the playbook accordingt o the operating system

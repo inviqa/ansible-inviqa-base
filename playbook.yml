@@ -18,6 +18,17 @@
   - developers
   - support
   roles:
+  - { role: filevault }
+  filevault:
+  - enable: True
+
+- hosts: all:localhost
+  tags:
+  - always
+  - non-developers
+  - developers
+  - support
+  roles:
   - { role: homebrew }
   - { role: casks }
   vars:

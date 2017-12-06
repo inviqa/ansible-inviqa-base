@@ -6,4 +6,5 @@
   version:  master
 - src:      goozbach.EPEL
 - src:      Rackor3000.sudo
+- src:      roliver.filevault
 ...
