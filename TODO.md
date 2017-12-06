@@ -1,13 +1,13 @@
 # TODO
-[ ] rename to ansible-inviqa-base-user-machine
-[ ] activate disk encryption
-[ ] change computer name with a inline Parameters
-[ ] configure ssh_config file with default frontdoor settings
-[ ] add support for macOS system settings
-[ ] add support for macOS Dock modifications
-[ ] add JC machine bonding (the secret key to connect to JC will be stored in Incubator, accessible only via Inviqa's IPs/frontdoor)
-[ ] add support for Linux machines
-[ ] add support for AppleID activation
-[ ] install the ladmin (maybe via JumpCloud): the password hash for admin could stored in incubator
-[ ] see if we can guide the user to change their Google Password through the kickstarter
-[ ] configure all Google applications using the users' account
+- [ ] rename to ansible-inviqa-base-user-machine
+- [ ] activate disk encryption
+- [ ] change computer name with a inline Parameters
+- [ ] configure ssh_config file with default frontdoor settings
+- [ ] add support for macOS system settings
+- [ ] add support for macOS Dock modifications
+- [ ] add JC machine bonding (the secret key to connect to JC will be stored in Incubator, accessible only via Inviqa's IPs/frontdoor)
+- [ ] add support for Linux machines
+- [ ] add support for AppleID activation
+- [ ] install the ladmin (maybe via JumpCloud): the password hash for admin could stored in incubator
+- [ ] see if we can guide the user to change their Google Password through the kickstarter
+- [ ] configure all Google applications using the users' account
