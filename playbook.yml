@@ -4,6 +4,8 @@
   tags:
   - always
   - non-developers
+  - developers
+  - support
   tasks:
   - { include_tasks: tasks/homebrew-prerequisites.yml }
   roles:
