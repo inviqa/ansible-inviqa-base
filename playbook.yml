@@ -51,7 +51,7 @@
   - cask_apps:
     - atom
     - filezilla
-    - hem
+    - inviqa/tools/hem
     - iterm2
     - vagrant
     - virtualbox
